@@ -49,7 +49,7 @@ class OnnxRuntimeConsumer(threading.Thread):
                 if len(input_buffer) == Config.bufsize:
                     start = time.time()
                     pred_onx = sess.run([label_name], {input_name: np.array(input_buffer, dtype=np.float32)})[0]
-                    print("Inference time: ", time.time() - start)
+                    print("Inference time: ", round(time.time() - start, 3))
                     input_buffer = []
                     # print(pred_onx)
                     Config.deadTime_sel1 = int(Config.q.qsize() / len(Config.deadTime_arr))
