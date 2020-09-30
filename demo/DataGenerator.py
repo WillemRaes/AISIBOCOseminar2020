@@ -1,5 +1,5 @@
 import threading
-from demo.Config import Config
+from Config import Config
 import numpy as np
 import time
 

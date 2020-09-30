@@ -3,7 +3,7 @@ import sklearn
 import numpy as np
 from sklearn.metrics import confusion_matrix
 import threading
-from demo.Config import Config
+from Config import Config
 import time
 import multiprocessing
 
