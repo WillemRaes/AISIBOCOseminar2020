@@ -2,6 +2,13 @@
 <project version="4">
   <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
+      <paths name="RPI4">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/pi" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="debian@192.168.1.191:22">
         <serverdata>
           <mappings>

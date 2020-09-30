@@ -19,11 +19,10 @@ class OnnxRuntimeConsumer(threading.Thread):
 
     def run(self):
         detected = 0
-        my_model = "IsolationForest.onnx"
         sess_setup_start = time.time()
         sess_options = rt.SessionOptions()
         sess_options.intra_op_num_threads = multiprocessing.cpu_count()
-        sess = rt.InferenceSession(my_model)
+        sess = rt.InferenceSession(self.modelName)
         print("Session setup time: ", time.time() - sess_setup_start)
         input_name = sess.get_inputs()[0].name
         print("input name", input_name)
