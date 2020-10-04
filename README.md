@@ -1,5 +1,5 @@
 # AISIBOCOseminar2020
-Deploy Machine Learning Models on Single Board Computer with ONNX 
+Deploy Machine Learning Models on Single Board Computer with ONNX (https://github.com/onnx/onnx) 
 
 This project contains:
 - the necesarry steps to build ONNX-runtime from source on Raspberry Pi4 (described in MLdeployONNX.sh).
